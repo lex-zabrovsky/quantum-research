@@ -16,6 +16,6 @@ RUN wget -qO- https://astral.sh/uv/install.sh | sh
 
 WORKDIR /app
 
-RUN uv init && \
-    uv add numpy && \
-    uv sync --frozen
+COPY pyproject.toml ./
+
+RUN uv sync
