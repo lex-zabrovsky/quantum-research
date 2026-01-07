@@ -7,13 +7,7 @@ RUN apt-get update --fix-missing && apt-get -y upgrade
 RUN apt-get install -y --no-install-recommends \
     apt-utils \
     curl \
-    cmake \
-    build-essential \
-    gcc \
-    g++-multilib \
     locales \
-    make \
-    ruby \
-    gcovr \
     wget \
+    python3 \
     && rm -rf /var/lib/apt/lists/*
