@@ -1,0 +1,16 @@
+{
+  "name": "C",
+  "build": {
+    "dockerfile": "./build.Dockerfile"
+  },
+  "runArgs": ["--platform=linux/amd64"],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "extensions.verifySignature": false
+      },
+      "extensions": ["ms-python.python", "ms-python.vscode-pylance", "ms-python.debugpy", "njpwerner.autodocstring"]
+    }
+  }
+}
